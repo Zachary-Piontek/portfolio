@@ -10,10 +10,12 @@ const LandingPage = () => {
     setMenuClass(toggleOpen ? "" : "active");
   };
 
+  // in the return statement, li style is a CSS variable that is set to the index of the li element
+
   return (
     <div className={`menu-container ${menuClass}`}>
       <button className="menu-toggle" onClick={toggleMenu}>
-        <h1>LD</h1>
+        <h1>404</h1>
       </button>
       <li style={{ "--i": 0 }} index="1">
         <a href="/projects">Projects</a>
