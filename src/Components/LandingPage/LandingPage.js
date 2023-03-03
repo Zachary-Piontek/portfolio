@@ -18,16 +18,24 @@ const LandingPage = () => {
         <h1>404</h1>
       </button>
       <li style={{ "--i": 0 }} index="1">
-        <a href="/projects">Projects</a>
+        <a href="/projects" className="projects-link">
+          Projects
+        </a>
       </li>
       <li style={{ "--i": 1 }} index="2">
-        <a href="/about">About</a>
+        <a href="/about" className="about-link">
+          About
+        </a>
       </li>
       <li style={{ "--i": 2 }} index="3">
-        <a href="/contact">Contact</a>
+        <a href="/contact" className="contact-link">
+          Contact
+        </a>
       </li>
       <li style={{ "--i": 3 }} index="4">
-        <a href="/resume">Resume</a>
+        <a href="/resume" className="resume-link">
+          Resume
+        </a>
       </li>
     </div>
   );

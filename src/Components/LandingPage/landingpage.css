@@ -17,7 +17,6 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 400px;
   width: 400px;
   position: relative;
 }
@@ -67,4 +66,24 @@ body {
 
 .menu-container.active li {
   transform: rotate(calc(360deg / 4 * var(--i)));
+}
+
+.projects-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.about-link:hover {
+  background-color: red;
+  color: white;
+}
+
+.contact-link:hover {
+  background-color: blue;
+  color: white;
+}
+
+.resume-link:hover {
+  background-color: green;
+  color: white;
 }
