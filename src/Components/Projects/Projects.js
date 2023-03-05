@@ -9,7 +9,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeInOut" }}
+      transition={{ ease: "easeOut" }}
     >
       Projects
     </motion.div>

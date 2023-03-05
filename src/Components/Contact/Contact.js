@@ -9,7 +9,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeInOut" }}
+      transition={{ duration: 2, ease: "easeInOut" }}
     >
       <h1>Contact</h1>
       <p>Phone: 123-456-7890</p>

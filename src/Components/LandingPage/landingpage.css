@@ -16,10 +16,10 @@ body {
   width: 100vw;
   background: repeating-linear-gradient(
       180deg,
-      hsla(0, 0%, 5%, 0.1) 0px,
+      hsla(220, 100%, 36%, 0.206) 0px,
       hsla(5, 0%, 55%, 0.1) 2px
     ),
-    linear-gradient(180deg, gray, black);
+    linear-gradient(90deg, black, gray);
 }
 
 .menu-container {

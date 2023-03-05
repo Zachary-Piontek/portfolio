@@ -6,9 +6,9 @@
   width: 100vw;
   height: 100vh;
   background: repeating-linear-gradient(
-      180deg,
+      360deg,
       hsla(220, 100%, 36%, 0.206) 0px,
       hsla(5, 0%, 55%, 0.1) 2px
     ),
-    linear-gradient(180deg, black, gray);
+    linear-gradient(480deg, black, gray);
 }
