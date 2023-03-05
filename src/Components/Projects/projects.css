@@ -1,0 +1,14 @@
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+      180deg,
+      hsla(220, 100%, 36%, 0.206) 0px,
+      hsla(5, 0%, 55%, 0.1) 2px
+    ),
+    linear-gradient(180deg, black, gray);
+}
