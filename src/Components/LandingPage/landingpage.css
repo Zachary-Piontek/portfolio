@@ -34,8 +34,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
+  color: whitesmoke;
+  background: black;
   z-index: 1;
   cursor: pointer;
   position: absolute;
@@ -62,7 +64,7 @@ body {
   }
   .menu-container li {
     transform-origin: 150px;
-    transform: rotate(0deg) translateX(125px);
+    transform: rotate(0deg) translateX(110px);
   }
 }
 
@@ -71,8 +73,8 @@ body {
   align-items: center;
   display: flex;
   color: black;
-  height: 70px;
-  width: 70px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   text-decoration: none;
   font-size: 15px;
@@ -101,21 +103,21 @@ body {
 }
 
 .projects-link:hover {
-  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red,
-    0 0 50px red;
+  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+    0 0 20px #00fa9a, 0 0 25px #00fa9a;
 }
 
 .about-link:hover {
-  text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue,
-    0 0 50px blue;
+  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+    0 0 20px #00fa9a, 0 0 25px #00fa9a;
 }
 
 .contact-link:hover {
-  text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green,
-    0 0 50px green;
+  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+    0 0 20px #00fa9a, 0 0 25px #00fa9a;
 }
 
 .resume-link:hover {
-  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
-    0 0 40px yellow, 0 0 50px yellow;
+  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+    0 0 20px #00fa9a, 0 0 25px #00fa9a;
 }
