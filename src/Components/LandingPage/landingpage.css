@@ -77,8 +77,8 @@ body {
   width: 75px;
   border-radius: 50%;
   text-decoration: none;
-  font-size: 15px;
-  border: 5px solid black;
+  font-size: 20px;
+  border: 2.5px solid black;
   transition: 0.8s;
 }
 
@@ -103,21 +103,29 @@ body {
 }
 
 .projects-link:hover {
-  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
-    0 0 20px #00fa9a, 0 0 25px #00fa9a;
+  text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00,
+    0 0 20px #ffff00, 0 0 25px #ffff00;
+  box-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00,
+    0 0 20px #ffff00, 0 0 25px #ffff00;
 }
 
 .about-link:hover {
   text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
     0 0 20px #00fa9a, 0 0 25px #00fa9a;
+  box-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+    0 0 20px #00fa9a, 0 0 25px #00fa9a;
 }
 
 .contact-link:hover {
-  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
-    0 0 20px #00fa9a, 0 0 25px #00fa9a;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+    0 0 20px #00ffff, 0 0 25px #00ffff;
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+    0 0 20px #00ffff, 0 0 25px #00ffff;
 }
 
 .resume-link:hover {
-  text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
-    0 0 20px #00fa9a, 0 0 25px #00fa9a;
+  text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600,
+    0 0 20px #ff6600, 0 0 25px #ff6600;
+  box-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600,
+    0 0 20px #ff6600, 0 0 25px #ff6600;
 }

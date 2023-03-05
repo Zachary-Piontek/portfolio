@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./landingpage.css";
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
@@ -15,7 +16,13 @@ const LandingPage = () => {
   // in the return statement, li style is a CSS variable that is set to the index of the li element
 
   return (
-    <div className={`menu-container ${menuClass}`}>
+    <motion.div
+      className={`menu-container ${menuClass}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeInOut" }}
+    >
       <button className="menu-toggle" onClick={toggleMenu}>
         <h1>{buttonText}</h1>
       </button>
@@ -39,7 +46,7 @@ const LandingPage = () => {
           Resume
         </a>
       </li>
-    </div>
+    </motion.div>
   );
 };
 
