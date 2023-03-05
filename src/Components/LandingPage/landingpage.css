@@ -19,7 +19,7 @@ body {
       hsla(220, 100%, 36%, 0.206) 0px,
       hsla(5, 0%, 55%, 0.1) 2px
     ),
-    linear-gradient(90deg, black, gray);
+    linear-gradient(135deg, black, gray);
 }
 
 .menu-container {

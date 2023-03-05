@@ -9,7 +9,7 @@ export const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ ease: "easeOut" }}
+      transition={{ duration: 5 }}
     >
       Resume
     </motion.div>
