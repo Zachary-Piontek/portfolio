@@ -5,10 +5,74 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: repeating-linear-gradient(
-      90deg,
-      hsla(0, 100%, 50%, 0.1) 0px,
-      hsla(5, 0%, 55%, 0.1) 2px
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+  background-color: #000000;
+  color: white;
+  border-radius: 2%;
+  /* need hidden and relative to keep gradient in the box */
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-box::before {
+  content: "";
+  /* position: absolute; need this otherwise contact text pushes down */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: conic-gradient(
+    transparent,
+    #ff6600 0deg 90deg,
+    #00ffff 90deg 180deg,
+    #00fa9a 180deg 270deg,
+    #ffff00 270deg 360deg
+  );
+  width: 60vw;
+  height: 60vh;
+  animation: spin 10s linear infinite;
+}
+
+.contact-box span {
+  inset: 3px;
+  position: absolute;
+  background-image: linear-gradient(90deg, rgb(33, 33, 33) 0%, transparent 59%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(168, 168, 168, 0.1) 0px,
+      rgba(168, 168, 168, 0.1) 1px,
+      transparent 1px,
+      transparent 13px
     ),
-    linear-gradient(180deg, black, gray);
+    repeating-linear-gradient(
+      135deg,
+      rgba(168, 168, 168, 0.1) 0px,
+      rgba(168, 168, 168, 0.1) 1px,
+      transparent 1px,
+      transparent 13px
+    ),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: copperplate, fantasy, sans-serif;
+  font-size: 1.25rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

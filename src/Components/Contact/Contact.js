@@ -11,10 +11,15 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 5, ease: "easeInOut" }}
     >
-      <h1>Contact</h1>
-      <p>Phone: 123-456-7890</p>
-      <p>Email:</p>
-      <p>LinkedIn:</p>
+      <div className="contact-box">
+        <span>
+          <h1>Contact</h1>
+          <p>Phone: 123-456-7890</p>
+          <p>Email:</p>
+          <p>LinkedIn:</p>
+          <p>GitHub:</p>
+        </span>
+      </div>
     </motion.div>
   );
 };
