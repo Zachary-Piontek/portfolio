@@ -1,23 +1,16 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./contact.css";
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <motion.div
-      className="contact-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 2, ease: "easeInOut" }}
-    >
+    <div className="contact-container">
       <div className="contact-box">
         <span>
           <h1>Contact</h1>
           <p>
             <AiOutlineMail />
-            <a>Email</a>
+            <a href="_black">Email</a>
           </p>
           <p>
             <AiFillLinkedin />
@@ -41,7 +34,7 @@ const Contact = () => {
           </p>
         </span>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
