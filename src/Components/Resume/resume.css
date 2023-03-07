@@ -7,3 +7,12 @@
   height: 100vh;
   color: white;
 }
+
+.resume-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  z-index: -1;
+  border: 5px solid gray;
+}
