@@ -5,10 +5,5 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: repeating-linear-gradient(
-      270deg,
-      hsla(220, 100%, 36%, 0.206) 0px,
-      hsla(5, 0%, 55%, 0.1) 2px
-    ),
-    linear-gradient(360deg, black, gray);
+  color: white;
 }

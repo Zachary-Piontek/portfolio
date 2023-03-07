@@ -14,12 +14,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: repeating-linear-gradient(
-      180deg,
-      hsla(220, 100%, 36%, 0.206) 0px,
-      hsla(5, 0%, 55%, 0.1) 2px
-    ),
-    linear-gradient(135deg, black, gray);
+  background: hsla(0, 0%, 0%, 1);
 }
 
 .menu-container {
@@ -43,8 +38,34 @@ body {
   position: absolute;
   border-radius: 50%;
   transition: transform 1.5s;
-  border: 2px solid black;
-  box-shadow: 0 0 10px 0 black, 0 0 20px 0 black, 0 0 30px 0 black;
+  animation: flash 5s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00,
+      0 0 20px #ffff00, 0 0 25px #ffff00;
+    box-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00,
+      0 0 20px #ffff00, 0 0 25px #ffff00;
+  }
+  33% {
+    text-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+      0 0 20px #00fa9a, 0 0 25px #00fa9a;
+    box-shadow: 0 0 5px #00fa9a, 0 0 10px #00fa9a, 0 0 15px #00fa9a,
+      0 0 20px #00fa9a, 0 0 25px #00fa9a;
+  }
+  66% {
+    text-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600,
+      0 0 20px #ff6600, 0 0 25px #ff6600;
+    box-shadow: 0 0 5px #ff6600, 0 0 10px #ff6600, 0 0 15px #ff6600,
+      0 0 20px #ff6600, 0 0 25px #ff6600;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+      0 0 20px #00ffff, 0 0 25px #00ffff;
+    box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff,
+      0 0 20px #00ffff, 0 0 25px #00ffff;
+  }
 }
 
 .menu-container li {
@@ -55,7 +76,9 @@ body {
   z-index: 0;
   left: 0;
   transition-delay: calc(0.1s * var(--i));
-  transform: rotate(0deg) translateX(170px);
+  transform: rotate(0deg) translateX(165px);
+  border: 2.5px solid white;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,13 +89,17 @@ body {
     transform-origin: 150px;
     transform: rotate(0deg) translateX(110px);
   }
+  .menu-toggle {
+    width: 85px;
+    height: 85px;
+  }
 }
 
 .menu-container li a {
   justify-content: center;
   align-items: center;
   display: flex;
-  color: black;
+  color: white;
   height: 75px;
   width: 75px;
   border-radius: 50%;
