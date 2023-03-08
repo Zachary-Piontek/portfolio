@@ -1,3 +1,57 @@
+body {
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0px,
+      transparent 25px,
+      rgba(0, 255, 236, 0.12) 25px,
+      rgba(0, 255, 236, 0.12) 27px,
+      transparent 27px,
+      transparent 51px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent 0px,
+      transparent 25px,
+      rgba(0, 255, 236, 0.12) 25px,
+      rgba(0, 255, 236, 0.12) 27px,
+      transparent 27px,
+      transparent 51px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent 0px,
+      transparent 50px,
+      rgba(255, 252, 0, 0.1) 50px,
+      rgba(255, 252, 0, 0.1) 52px,
+      transparent 52px,
+      transparent 102px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent 0px,
+      transparent 50px,
+      rgba(255, 252, 0, 0.1) 50px,
+      rgba(255, 252, 0, 0.1) 52px,
+      transparent 52px,
+      transparent 102px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 109, 0, 0.14) 0px,
+      rgba(255, 109, 0, 0.14) 2px,
+      transparent 2px,
+      transparent 102px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 109, 0, 0.14) 0px,
+      rgba(255, 109, 0, 0.14) 2px,
+      transparent 2px,
+      transparent 102px
+    ),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+}
+
 .App {
   text-align: center;
 }

@@ -2,7 +2,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.projects-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.projects-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2) 40%,
+    rgba(255, 255, 255, 0.1)
+  );
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.projects-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
+}
+
+.projects-content h2 {
+  margin-top: 0;
+}
+
+.projects-content p {
+  margin-bottom: 0;
 }
