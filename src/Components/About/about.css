@@ -7,3 +7,46 @@
   height: 100vh;
   color: white;
 }
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  width: 75vw;
+  height: 100vh;
+  perspective: 1000px;
+  overflow: hidden;
+  color: yellow;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  animation-name: starwars;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  transform-origin: -50% -100%;
+  opacity: 0;
+  text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black,
+    3px 3px 0 black;
+}
+
+.about-section p {
+  animation-name: starwars;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  transform-origin: -50% -100%;
+  opacity: 0;
+}
+
+@keyframes starwars {
+  0% {
+    opacity: 0;
+    transform: scaleY(3);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

@@ -4,21 +4,23 @@ import "./about.css";
 export const About = () => {
   return (
     <div className="about-container">
-      <h1>About Myself</h1>
-      <section>
+      <section className="about-section">
+        <h1>About Myself</h1>
         <p>
-          I am a full stack web developer with a background in customer service
-          and sales. I have a passion for learning and I am always looking for
-          new ways to improve my skills. I am a quick learner and I am always
-          looking for new challenges. I am a self-motivated individual who is
-          always looking for ways to improve myself and my work. I am a
-          problem-solver and I am always looking for new ways to solve problems.
-          I am a team player and I am always looking for ways to help my team
-          succeed. I am a hard worker and I am always looking for ways to
-          improve my work. I am a creative individual who is always looking for
-          new ways to improve my work. I am a self-starter and I am always
-          looking for ways to improve my work. I am a self-motivated individual
-          who is always looking for ways to improve my work.
+          I am a software developer driven by an insatiable curiosity for the
+          intricate world of AWS services and their potential applications. I
+          invite you to approach me with any questions regarding AWS or
+          Javascript, as I would be humbled to have the opportunity to share my
+          expertise. An adventurous spirit courses through my veins, as
+          demonstrated by my summer of 2016 cross-country expedition, which
+          spanned over 16,000 miles throughout the United States and Canada. I
+          strive to maintain this thirst for discovery and development in all
+          aspects of my life, particularly in the realm of software engineering.
+          My experience as a software developer has primarily revolved around
+          Javascript, REACT, AWS, node.js, and postgres. I view software
+          development not as a job, but as a continual journey of learning and
+          growth. The intricate web of complexities present in the field keeps
+          me endlessly captivated and driven to explore new possibilities.
         </p>
       </section>
     </div>
