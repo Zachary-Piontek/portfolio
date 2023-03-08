@@ -10,7 +10,7 @@ const Projects = () => {
       <div className="projects-box">
         <div className="projects-content">
           <h2>CryptoWarfare</h2>
-          <p>Track your future wealth</p>
+          <p>Track your future crypto wealth</p>
           <a
             href="https://details.dq8jw5s2otf2n.amplifyapp.com/"
             target="_blank"
@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="projects-box">
         <div className="projects-content">
           <h2>Petstore</h2>
-          <p>Basic CRUD operations using AWS Amplify with Auth</p>
+          <p>Basic CRUD using AWS Amplify with Auth</p>
           <a
             href="https://main.d3pqwsrvh31zrd.amplifyapp.com/"
             target="_blank"
