@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-family: Allerta Stencil;
 }
 
 /* remove scrollbars */
@@ -79,4 +80,12 @@
 
 .projects-content p {
   margin-bottom: 0;
+}
+
+.projects-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  border: 2px solid gray;
+  margin-bottom: 20px;
 }
