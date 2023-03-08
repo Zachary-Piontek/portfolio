@@ -89,3 +89,45 @@
   border: 2px solid gray;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    padding-top: 20%;
+  }
+  .projects-box {
+    width: 250px;
+    height: 250px;
+  }
+  .projects-content {
+    width: 250px;
+    height: 250px;
+  }
+  .projects-content p {
+    font-size: 1.25rem;
+  }
+  .projects-content img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-container {
+    padding-top: 10%;
+  }
+  .projects-box {
+    width: 250px;
+    height: 250px;
+  }
+  .projects-content {
+    width: 200px;
+    height: 200px;
+  }
+  .projects-content p {
+    font-size: 1rem;
+  }
+  .projects-content img {
+    width: 100px;
+    height: 100px;
+  }
+}
