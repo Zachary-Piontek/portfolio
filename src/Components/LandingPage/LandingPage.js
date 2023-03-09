@@ -1,24 +1,27 @@
 import { useState } from "react";
 import "./landingpage.css";
+import Selfie from "./CartoonSelfie.png";
 
 const LandingPage = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
   const [menuClass, setMenuClass] = useState("");
-  const [buttonText, setButtonText] = useState("Click Me");
 
   const toggleMenu = () => {
     setToggleOpen(!toggleOpen);
     setMenuClass(toggleOpen ? "" : "active");
-    setButtonText(toggleOpen ? "Click Me" : "<ZP>");
   };
 
   // in the return statement, li style is a CSS variable that is set to the index of the li element
 
   return (
     <div className="landing-container">
+      <section className="landing-headline">
+        <h1 className="landing-title">Zachary P.</h1>
+        <h2 className="landing-subtitle">Full Stack Web Developer</h2>
+      </section>
       <div className={`menu-container ${menuClass}`}>
         <button className="menu-toggle" onClick={toggleMenu}>
-          <h1>{buttonText}</h1>
+          <img src={Selfie} alt="Zachary P. Selfie" className="selfie" />
         </button>
         <li style={{ "--i": 0 }} index="1">
           <a href="/projects" className="projects-link">
