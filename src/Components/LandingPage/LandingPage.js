@@ -45,7 +45,7 @@ const LandingPage = () => {
         </li>
         <li style={{ "--i": 3 }} index="4">
           <a href="/resume" className="resume-link">
-            Resume
+            Skills
           </a>
         </li>
       </div>
