@@ -14,8 +14,8 @@
 
 .projects-box {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin: 20px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.15);
@@ -82,15 +82,17 @@
 
 .projects-content h2 {
   margin-top: 0;
+  font-size: 2rem;
 }
 
 .projects-content p {
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .projects-content img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 5%;
   border: 2px solid gray;
   margin-bottom: 20px;
@@ -108,5 +110,20 @@
   .projects-content img {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-box {
+    width: 300px;
+    height: 300px;
+  }
+  .projects-content {
+    width: 300px;
+    height: 300px;
+  }
+  .projects-content img {
+    width: 200px;
+    height: 200px;
   }
 }

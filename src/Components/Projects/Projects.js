@@ -1,8 +1,8 @@
 import React from "react";
 import "./projects.css";
 import chromeSays from "./ChromeSays.png";
-import petStore from "./Petstore.png";
 import cryptoWarfare from "./CryptoWarfare.png";
+import rankaroo from "./Rankaroo.png";
 
 const Projects = () => {
   return (
@@ -22,14 +22,10 @@ const Projects = () => {
       </div>
       <div className="projects-box">
         <div className="projects-content">
-          <h2>Petstore</h2>
-          <p>Basic CRUD using AWS Amplify with Auth</p>
-          <a
-            href="https://main.d3pqwsrvh31zrd.amplifyapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={petStore} alt="pet store" />
+          <h2>Rankaroo</h2>
+          <p>Movie Database Ranker</p>
+          <a href="https://rankaroo.org/" target="_blank" rel="noreferrer">
+            <img src={rankaroo} alt="pet store" />
           </a>
         </div>
       </div>
