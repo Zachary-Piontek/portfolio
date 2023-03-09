@@ -25,11 +25,14 @@ body {
 }
 
 .landing-headline {
-  color: white;
+  color: ivory;
   position: absolute;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 2px #0083a7;
 }
 
 .menu-toggle {
@@ -184,10 +187,41 @@ body {
 
 .selfie {
   display: flex;
-  justify-content: top;
-  align-items: top;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 2.5px solid white;
+}
+
+.menu-button-text {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  animation: strobe 20s infinite;
+  text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black,
+    0 0 50px black, 0 0 60px black, 0 0 70px black;
+}
+
+@keyframes strobe {
+  0% {
+    color: rgb(188, 122, 0);
+  }
+  25% {
+    color: rgba(227, 0, 0, 0.546);
+  }
+  50% {
+    color: rgb(64, 0, 148);
+  }
+  75% {
+    color: rgba(0, 255, 0, 0.611);
+  }
+  100% {
+    color: rgb(0, 63, 90);
+  }
 }
