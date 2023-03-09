@@ -121,6 +121,11 @@ body {
     max-width: 150px;
     max-height: 150px;
   }
+  .menu-button-text {
+    font-size: 0.8rem;
+    bottom: 5%;
+    position: absolute;
+  }
 }
 
 .menu-container li a {
@@ -197,9 +202,8 @@ body {
 
 .menu-button-text {
   font-size: 1.5rem;
-  margin-top: 0.5rem;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
