@@ -21,7 +21,14 @@ export const Resume = () => {
           src="https://img.icons8.com/color/256/amazon-web-services.png"
           alt="AWS"
         />
-        <img className="resume-image" src={resumeImage} alt="Resume" />
+        <a
+          className="resume-image"
+          href={resumeImage}
+          target="_blank"
+          rel="noreferrer"
+        >
+          .
+        </a>
       </div>
     </div>
   );

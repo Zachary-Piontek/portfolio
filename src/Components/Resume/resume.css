@@ -11,9 +11,18 @@
 }
 
 .resume-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px white;
+  background-image: url("./Resume-Feb20_2023.jpg");
+  background-size: cover;
+  background-position: center;
   z-index: -1;
-  border: 5px solid gray;
-  width: 100%;
 }
 
 .skills-container {
@@ -21,8 +30,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   color: red;
-  z-index: -11;
+  z-index: 1;
 }
 
 .skills-header {
@@ -30,7 +40,9 @@
   font-weight: 700;
   margin-bottom: 1rem;
   transform: translate(0%, -400px);
-  color: red;
+  color: black;
+  text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white,
+    0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
 }
 
 .skills-container img {
@@ -41,39 +53,41 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px wheat;
+  box-shadow: 0px 0px 10px white;
 }
 
 .skills-container img:nth-child(1) {
-  transform: rotate(60deg) translateY(-125px) translateX(-125px) rotate(-60deg);
+  transform: rotate(60deg) translateY(-110px) translateX(-280px) rotate(-60deg);
 }
 
 .skills-container img:nth-child(2) {
-  transform: rotate(120deg) translateY(-125px) translateX(-125px)
-    rotate(-120deg);
+  transform: rotate(120deg) translateY(175px) translateX(225px) rotate(-120deg);
 }
 
 .skills-container img:nth-child(3) {
-  transform: rotate(180deg) translateY(-150px) translateX(-125px)
+  transform: rotate(180deg) translateY(-125px) translateX(-150px)
     rotate(-180deg);
 }
 
 .skills-container img:nth-child(4) {
-  transform: rotate(240deg) translateY(-175px) translateX(-175px)
+  transform: rotate(240deg) translateY(-150px) translateX(-150px)
     rotate(-240deg);
 }
 
 .skills-container img:nth-child(5) {
-  transform: rotate(300deg) translateY(-125px) translateX(-125px)
-    rotate(-300deg);
+  transform: rotate(300deg) translateY(-325px) translateX(-25px) rotate(-300deg);
 }
 
 .skills-container img:nth-child(6) {
-  transform: rotate(360deg) translateY(-150px) translateX(150px) rotate(-360deg);
+  transform: rotate(360deg) translateY(-135px) translateX(190px) rotate(-360deg);
 }
 
-.skills-container img:nth-child(7) {
-  transform: rotate(0deg) translateY(-200px) translateX(-200px) rotate(0deg);
-  width: 400px;
-  height: 400px;
+@media screen and (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
