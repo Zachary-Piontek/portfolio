@@ -90,4 +90,50 @@
     align-items: center;
     text-align: center;
   }
+
+  .skills-container img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .resume-image {
+    width: 250px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .skills-container img:nth-child(1) {
+    transform: rotate(0deg) translateY(-175px) translateX(-25px) rotate(0deg);
+  }
+
+  .skills-container img:nth-child(2) {
+    transform: rotate(0deg) translateY(75px) translateX(-140px) rotate(0deg);
+  }
+
+  .skills-container img:nth-child(3) {
+    transform: rotate(0deg) translateY(75px) translateX(85px) rotate(0deg);
+  }
+
+  .skills-container img:nth-child(4) {
+    transform: rotate(0deg) translateY(125px) translateX(-25px) rotate(0deg);
+  }
+
+  .skills-container img:nth-child(5) {
+    transform: rotate(0deg) translateY(-75px) translateX(-165px) rotate(0deg);
+  }
+
+  .skills-container img:nth-child(6) {
+    transform: rotate(360deg) translateY(-75px) translateX(120px);
+  }
+  .skills-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transform: translate(0%, -250px);
+  }
 }

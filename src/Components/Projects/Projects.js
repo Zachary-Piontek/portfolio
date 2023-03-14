@@ -12,7 +12,7 @@ const Projects = () => {
           <h2>CryptoWarfare</h2>
           <p>Track your future crypto wealth</p>
           <a
-            href="https://details.dq8jw5s2otf2n.amplifyapp.com/"
+            href="https://newdetails.d3fh9ibto9nca8.amplifyapp.com/"
             target="_blank"
             rel="noreferrer"
           >
