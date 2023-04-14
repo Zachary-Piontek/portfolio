@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-import chromeSays from "./ChromeSays.png";
+import news from "./PhilippineNews.png";
 import cryptoWarfare from "./CryptoWarfare.png";
 import rankaroo from "./Rankaroo.png";
 
@@ -31,14 +31,14 @@ const Projects = () => {
       </div>
       <div className="projects-box">
         <div className="projects-content">
-          <h2>Chrome Says</h2>
-          <p>A faster game than simon says</p>
+          <h2>The Philippine Sun</h2>
+          <p>News around the Philippines</p>
           <a
-            href="https://chrome-says.netlify.app/"
+            href="https://thephilippinesun.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={chromeSays} alt="chrome says" />
+            <img src={news} alt="chrome says" />
           </a>
         </div>
       </div>
