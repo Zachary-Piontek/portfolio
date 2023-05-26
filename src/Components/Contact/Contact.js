@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -8,10 +8,6 @@ const Contact = () => {
       <div className="contact-box">
         <span>
           <h1>Contact</h1>
-          <p>
-            <AiOutlineMail />
-            <a href="_black">Email</a>
-          </p>
           <p>
             <AiFillLinkedin />
             <a
